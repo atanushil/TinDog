@@ -1,0 +1,435 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar .logo{
+    font: 26px "Poppins", sans-serif;
+    font-weight: 400;
+}
+.navbar {
+    background-color: #343a40;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+    background-color: #007bff33;
+    border-radius: 5px;
+}
+
+
+.title{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.title .left{
+    padding: 4rem;
+}
+.title .left p{
+    font-size: 68px;
+    font-weight: 700;
+    color: #000;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.title .left .download{
+    display: flex;
+    gap:  2rem;
+    margin-top: 3rem;
+}
+.title .left .download div{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+    gap:  0.6rem;
+    width: 210px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+.title .left .download div.active{
+    background-color: #fff;
+    color: #000;
+
+}
+.title .left .download div:hover{
+    background-color: #d8c0c0;
+    color: #000;
+}
+.title .left .download div img{
+    height: 40px;
+    width: 40px;
+}
+.title .right{
+    padding: 4.9rem 6rem 0 6rem;
+}
+.title .right img{
+    width: 25vw;
+    height: 90vh;
+}
+
+.features{
+    margin: 2rem  5rem 2rem 5rem;
+}
+.features ul {
+    padding: 5rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.features ul li img{
+    height: 70px;
+    width: 70px;
+}
+.features ul li{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap:2rem;
+    padding: 0.5rem;
+}
+.features ul li div .text-1{
+    font-size: 48px;
+}
+.features ul li div .text-2{
+    font-size: 20px;
+}
+.testimonial{
+    margin: 0rem  5rem 5rem 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.testimonial p{
+    font-size: 44px;
+    text-align: center;
+    margin:1rem 2rem;
+    font-weight: 500;
+    line-height: 52px;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.testimonial span{
+    color:#504b4b;
+    font-family:'Poppins', sans-serif ;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.testimonial img{
+    border-radius: 50%;
+}
+.testimonial .logo-section img{
+    border-radius: 0;
+    margin:1rem 4rem;
+    height: 40px;
+}
+.testimonial .logo-section{
+    align-items: center;
+}
+.pricing{
+    margin: 0rem  5rem 5rem 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.pricing .text-1{
+    font-size: 66px;
+    font-weight: 550;
+    padding: 0.4rem;
+}
+.pricing .text-2{
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0.4rem;
+
+}
+.pricing .plan-section{
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 2rem;
+}
+.pricing .plan-section .plans{
+    width: 24vw;
+    text-align: center;
+    border-radius:8px ;
+    border: 1px solid #00011133;
+}
+.pricing .plan-section .plans .heading{
+    font-size: 36px;
+    border-bottom: 1px solid #575454;
+    background-color: #F8F8F8;
+    align-items: center;
+    padding: 0.4rem;
+}
+.pricing .plan-section .price{
+    font-size: 48px;
+    line-height: 100%;
+    color:#424649;
+    padding: 1rem;
+}
+.pricing .plan-section .plans .text-3{
+    font-size: 18px;
+    line-height: 35px;
+}
+.pricing .plan-section .plans .btn{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 1rem;
+    border: 1px solid #575454;
+    border-radius: 8px;
+    margin: 1.4rem;
+}
+.pricing .plan-section .plans .btn:hover{
+    background-color: #424649;
+    color: #fff;
+    opacity: 0.8;
+
+}
+
+.pricing .plan-section .plans .active{
+    background-color: #424649;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.footer{
+    height: 55vh;
+}
+.footer .logo{
+    display: flex;
+    align-items: center;
+}
+.footer .logo img{
+    height: 100px;
+    width: 100px;
+}
+.footer .logo p{
+    font-size: 80px;
+    font-display:initial;
+    color: #e9ecef;
+}
+.footer .option-section{
+    display: flex;
+    float: right;
+    padding: 1rem 4rem;
+}
+.footer .option-section .options{
+    width: 20vw;
+}
+.footer .option-section .options .list{
+    font-size: 20px;
+    color: #252628;
+    line-height: 30px;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+.footer .option-section .options .list p:hover{
+    color: #e9ecef;
+}
+
+.footer .option-section .options .heading{
+    font-size: 30px;
+}
+.container {
+    float: left;
+    padding: 20px 0;
+    border-top: 1px solid #e9ecef;
+    width: 100%;
+    text-align: center;
+}
+
+.container p {
+    margin-bottom: 0;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.container ul li:last-child {
+    margin-right: 0;
+}
+
+.container ul li a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.container ul li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .navbar{
+        position: sticky;
+        bottom: 0;
+    }
+    .navbar .logo{
+        display: none;
+    }
+    .navbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .title .left{
+        order: 1;
+        margin: 2rem;
+        padding: 1rem;
+        padding-left: 2rem;
+        align-self:self-start;
+
+    }
+    .title .left p{
+        font-size: 4rem;
+    }
+    .title .right{
+        align-items: center;
+        margin-top: -25px;
+    }
+    .title .right img{
+        height: 90vh;
+        width: 80vw;
+    }
+.title .left .download{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+}
+.features{
+    margin: 0;
+}
+.features ul {
+    padding: 4rem 3rem 2rem 3rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.testimonial{
+    margin: 0;
+    margin-top: 8rem;
+    padding-top: 4rem;
+}
+.testimonial .logo-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 0 4rem;
+    align-items: center;
+}
+.testimonial .logo-section img {
+    margin: 1rem 2rem 1rem 0;
+}
+.pricing{
+    margin: 1rem;
+    padding-top: 4rem;
+}
+.pricing .text-1{
+    font-size: 3rem;
+}
+.pricing .text-2{
+    font-size: 1.6rem;
+}
+.pricing .plan-section{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    gap: 2rem;
+}
+.pricing .plan-section .plans{
+    width: 100%;
+}
+.footer .logo img{
+    width: 60px;
+    height: 60px;
+
+}
+.footer .logo p{
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+.footer .option-section{
+    display: flex;
+    float: left;
+    padding: 1rem 4rem;
+}
+.footer .option-section .options{
+    width: 25vw;
+}
+.container{
+    padding-top: 2rem;
+}
+}
